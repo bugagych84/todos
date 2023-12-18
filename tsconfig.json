@@ -1,0 +1,29 @@
+{
+  "compilerOptions": {
+    "outDir": "./dist/",      
+    "module": "ESNext",
+    "target": "ES5",
+    "skipLibCheck": true,
+    "jsx": "react-jsx",      
+    "allowJs": true,
+    "moduleResolution": "node",
+    "useDefineForClassFields": true,
+    "allowSyntheticDefaultImports": true,
+    "isolatedModules": true,
+    "esModuleInterop": true,
+    "noImplicitAny": true,
+    "resolveJsonModule": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noFallthroughCasesInSwitch": true,
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["./src/*"]
+    },    
+  },
+  "ts-node": {
+      "compilerOptions": {
+        "module": "CommonJS"
+      }
+    }
+}
