@@ -1,11 +1,11 @@
-Проект с использованием технологи:
-React
+Проект с использованием технологи:  
+React  
 Typescript
 
-В ветке styled-components
+В ветке styled-components  
 StyledComponents
 
-В ветке main
+В ветке main  
 Css modules
 
 Сборщик webpack

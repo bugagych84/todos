@@ -1,6 +1,5 @@
 import { ReactNode } from 'react';
-
-import styles from './Task.module.scss';
+import styled from 'styled-components';
 
 interface TaskProps {
   id: string;
@@ -8,19 +7,22 @@ interface TaskProps {
   children: ReactNode;
 }
 
-const Task = ({ id, onDelete, children }: TaskProps) => {
-  // const [deleteText, setDeleteText] = useState('');
+const TaskItem = styled.li`
+  margin: 1rem 0;
+  background: #00358b;
+  box-shadow: 0 2px 8px rgba(50, 50, 50, 0.25);
+  border-radius: 8px;
+  color: white;
+  padding: 1rem 2rem;
+  cursor: pointer;
+`;
 
+const Task = ({ id, onDelete, children }: TaskProps) => {
   const deleteHandler = () => {
-    // setDeleteText('(Deleted!)');
     onDelete(id);
   };
 
-  return (
-    <li className={styles['task-item']} onClick={deleteHandler}>
-      {children}
-    </li>
-  );
+  return <TaskItem onClick={deleteHandler}>{children}</TaskItem>;
 };
 
 export default Task;
