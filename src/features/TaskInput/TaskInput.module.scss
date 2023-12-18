@@ -22,3 +22,11 @@
   background: #c8e1e4;
   border-color: #00358b;
 }
+
+.form-control.error input {
+  border: 1px solid red;
+}
+
+.form-control.error label {
+  color: red;
+}

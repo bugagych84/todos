@@ -1,5 +1,6 @@
 .button {
   font: inherit;
+  width: 100%;
   padding: 0.5rem 1.5rem;
   color: white;
   background: #00358b;
@@ -16,4 +17,10 @@
 .button:active {
   background: #245fbd;
   box-shadow: 0 0 8px rgba(50, 50, 50, 0.25);
+}
+
+@media (min-width: 768px) {
+  .button {
+    width: auto;
+  }
 }

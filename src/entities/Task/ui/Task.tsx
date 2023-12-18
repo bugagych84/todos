@@ -9,10 +9,7 @@ interface TaskProps {
 }
 
 const Task = ({ id, onDelete, children }: TaskProps) => {
-  // const [deleteText, setDeleteText] = useState('');
-
   const deleteHandler = () => {
-    // setDeleteText('(Deleted!)');
     onDelete(id);
   };
 
